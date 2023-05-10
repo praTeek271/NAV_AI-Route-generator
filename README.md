@@ -20,14 +20,27 @@
 <br>
 
 # Steps to use it
-  - Clone the github project using :  `git clone https://github.com/praTeek271/TrafficAndRoutePrediction-NAV_AI.git`  .
+  - Clone the github project using :  
+  
+  ```bash
+    git clone https://github.com/praTeek271/TrafficAndRoutePrediction-NAV_AI.git
+  ```
 
-  - Move to your directory: `cd TrafficAndRoutePrediction-NAV_AI` .
+  - Move to your directory: 
+  ```bash
+    cd TrafficAndRoutePrediction-NAV_AI
+  ```
 
   - Use the following command:
 
-       - `pip install -r requirements.txt`
-       - `py app.py`
+       ```bash
+         pip install -r requirements.txt
+       ```
+       
+       
+       ```bash
+         py app.py
+       ```
 
 
   - Now your code is ruunning.
