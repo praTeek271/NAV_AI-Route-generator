@@ -1,53 +1,47 @@
 # TrafficAndRoutePrediction-NAV_AI
 
-<img src="https://github.com/praTeek271/TrafficAndRoutePrediction-NAV_AI/blob/master/demo.png"/>
+![Demo](https://github.com/praTeek271/TrafficAndRoutePrediction-NAV_AI/blob/master/demo.png)
 
-<hr>
-### About the Project
-  - The project aims to provide route prediction and traffic management capabilities using Python. It utilizes various data sources, such as historical traffic data, real-time traffic updates, and sensor data, to generate accurate predictions and optimize route recommendations.
+## About the Project
 
-  - The project's working involves several key steps. First, it gathers relevant data from multiple sources, including traffic sensors, GPS devices, and historical traffic databases. This data provides information about traffic flow, congestion, road conditions, and other factors influencing route selection.
+The TrafficAndRoutePrediction-NAV_AI project aims to provide route prediction and traffic management capabilities using Python. It leverages various data sources, including historical traffic data, real-time traffic updates, and sensor data, to generate accurate predictions and optimize route recommendations.
 
-  - Next, the project employs machine learning algorithms, such as deep learning models like LSTMs or graph convolutional networks (GCNs), to analyze the collected data and generate predictions. These models learn patterns and relationships from the historical data and use them to predict future traffic conditions and route outcomes.
+The project's workflow involves several key steps:
 
-  - The predictions are then combined with real-time traffic updates to further refine and adjust the recommended routes. This ensures that the system adapts to changing traffic conditions and provides the most accurate and up-to-date information to users.
+1. **Data Gathering**: Relevant data is collected from multiple sources, such as traffic sensors, GPS devices, and historical traffic databases. This data provides valuable insights into traffic flow, congestion, road conditions, and other factors influencing route selection.
 
-  - To visualize the results, the project may utilize interactive maps and data visualizations. This allows users to see predicted routes, traffic congestion levels, alternative routes, and estimated travel times. Additionally, the system can provide real-time notifications or alerts about significant traffic incidents or changes that may affect the selected route.
+2. **Machine Learning Analysis**: Machine learning algorithms, such as deep learning models like LSTMs or graph convolutional networks (GCNs), are employed to analyze the collected data and generate predictions. These models learn patterns and relationships from historical data to predict future traffic conditions and route outcomes.
 
-  - Overall, the project aims to optimize route planning and traffic management by leveraging historical data, machine learning techniques, and real-time updates. By providing accurate predictions and alternative routes, it assists users in making informed decisions, minimizing travel time, reducing congestion, and enhancing overall transportation efficiency.
-<br>
-<hr>
-<br>
+3. **Real-Time Updates Integration**: The predictions are combined with real-time traffic updates to further refine and adjust the recommended routes. This ensures that the system adapts to changing traffic conditions and provides the most accurate and up-to-date information to users.
 
-# Steps to use it
-  - Clone the github project using :  
-  
-  ```bash
-    git clone https://github.com/praTeek271/TrafficAndRoutePrediction-NAV_AI.git
-  ```
+4. **Visualization and User Interaction**: Interactive maps and data visualizations are utilized to visualize the results. Users can view predicted routes, traffic congestion levels, alternative routes, and estimated travel times. Real-time notifications or alerts about significant traffic incidents or changes may also be provided.
 
-  - Move to your directory: 
-  ```bash
-    cd TrafficAndRoutePrediction-NAV_AI
-  ```
+## Steps to Use the Project
 
-  - Use the following command:
+To use the TrafficAndRoutePrediction-NAV_AI project, follow these steps:
 
-       ```bash
-         pip install -r requirements.txt
-       ```
-       
-       
-       ```bash
-         py app.py
-       ```
+1. Clone the GitHub project by running the following command in your terminal:
+   ```bash
+   git clone https://github.com/praTeek271/TrafficAndRoutePrediction-NAV_AI.git
+   ```
 
+2. Navigate to the project directory:
+   ```bash
+   cd TrafficAndRoutePrediction-NAV_AI
+   ```
 
-  - Now your code is ruunning.
+3. Install the required dependencies by running the following command:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+4. Start the project by running the following command:
+   ```bash
+   python app.py
+   ```
 
-```diff
-- Do not forget to enter your own API_KEY <br> The coordinates of source should be greater than the destination coordinates. 
-```
+Make sure to enter your own API_KEY in the code. Also, ensure that the coordinates of the source are greater than the destination coordinates.
 
+Now the project is up and running, ready to provide route predictions and traffic management capabilities based on the data and algorithms employed.
 
+Feel free to explore the project and leverage its features for optimizing your route planning and traffic management needs.
