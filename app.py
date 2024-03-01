@@ -7,7 +7,7 @@ import openrouteservice
 import herepy
 
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='template')
 
 
 def format_duration(seconds):
@@ -72,12 +72,9 @@ def get_map():
 
         map_html = m._repr_html_()
         formatted_duration = format_duration(duration)
-    else:
-        map_html=folium.Map(location=[20,77], zoom_start=4)._repr_html_()
-        formatted_duration = ""
     return render_template('index.html', map_html=map_html, duration=formatted_duration)
 
-if __name__ == '__main__':  
+if __name__ == '__main__':
     app.run(debug=True)
 
 
