@@ -1,6 +1,6 @@
-# TrafficAndRoutePrediction-NAV_AI
+# NAV_AI-Route-generator
 
-![Demo](https://github.com/praTeek271/TrafficAndRoutePrediction-NAV_AI/blob/master/demo.png)
+![Demo](https://github.com/praTeek271/NAV_AI-Route-generator/blob/master/demo.png)
 
 This is a Python web application that allows users to visualize traffic congestion using a heatmap and find the shortest route between two points. It uses the HERE Traffic API for traffic data and the OpenRouteService API for routing information. The application is built using Flask for the web framework and Folium for map visualization.
 
@@ -26,16 +26,16 @@ pip install folium flask requests openrouteservice herepy
 
 ## Steps to Use the Project
 
-To use the TrafficAndRoutePrediction-NAV_AI project, follow these steps:
+To use the NAV_AI-Route-generator project, follow these steps:
 
 1. Clone the GitHub project by running the following command in your terminal:
    ```bash
-   git clone https://github.com/praTeek271/TrafficAndRoutePrediction-NAV_AI.git
+   git clone https://github.com/praTeek271/NAV_AI-Route-generator.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd TrafficAndRoutePrediction-NAV_AI
+   cd NAV_AI-Route-generator
    ```
 
 3. Install the required dependencies by running the following command:
@@ -69,7 +69,7 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 ## About the Project
 
-The TrafficAndRoutePrediction-NAV_AI project aims to provide route prediction and traffic management capabilities using Python. It leverages various data sources, including historical traffic data, real-time traffic updates, and sensor data, to generate accurate predictions and optimize route recommendations.
+The NAV_AI-Route-generator project aims to provide route prediction and traffic management capabilities using Python. It leverages various data sources, including historical traffic data, real-time traffic updates, and sensor data, to generate accurate predictions and optimize route recommendations.
 
 The project's workflow involves several key steps:
 
@@ -83,7 +83,7 @@ The project's workflow involves several key steps:
 
 
 ---
-***Note:*** *The TrafficAndRoutePrediction-NAV_AI project is designed to be flexible and extensible, allowing for the integration of additional data sources, machine learning models, and visualization tools to enhance its capabilities.*
+***Note:*** *The NAV_AI-Route-generator project is designed to be flexible and extensible, allowing for the integration of additional data sources, machine learning models, and visualization tools to enhance its capabilities.*
 
 ** ***``
 Feel free to explore the project and leverage its features for optimizing your route planning and traffic management needs.
