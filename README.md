@@ -1,6 +1,8 @@
 # NAV_AI-Route-generator
 
 ![Demo](https://github.com/praTeek271/NAV_AI-Route-generator/blob/master/demo.png)
+---
+![Demo](https://github.com/praTeek271/NAV_AI-Route-generator/output.gif)
 
 This is a Python web application that allows users to visualize traffic congestion using a heatmap and find the shortest route between two points. It uses the HERE Traffic API for traffic data and the OpenRouteService API for routing information. The application is built using Flask for the web framework and Folium for map visualization.
 
