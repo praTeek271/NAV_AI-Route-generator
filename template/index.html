@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Heatmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 32px;
+        }
+
+        h1 {
+            font-family: monospace;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #13151dcf;
+            color: whitesmoke;
+            padding: 20px;
+            width: 30%;
+        }
+
+        .map-container {
+            width: 145%;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 5px;
+            margin: 5px 6px 5px 6px;
+            background: linear-gradient(0deg, #ddd, #fff);
+            border-radius: 6px;
+            border: none;
+            cursor: text;
+        }
+
+        input[type="submit"],
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 42px 6px 0 0;
+            cursor: pointer;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        button {
+            background-color: #f44336;
+        }
+
+        button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Traffic Heatmap</h1>
+            <form action="/" method="POST">
+                <label for="lat1">Starting Latitude:</label>
+                <input type="text" id="lat1" name="lat1" required>
+                <label for="lng1">Starting Longitude:</label>
+                <input type="text" id="lng1" name="lng1" required>
+                <br>
+                <label for="lat2">Ending Latitude:</label>
+                <input type="text" id="lat2" name="lat2" required>
+                <label for="lng2">Ending Longitude:</label>
+                <input type="text" id="lng2" name="lng2" required>
+                <br>
+                <label for="vehicle_type">Vehicle Type:</label>
+                <select name="vehicle_type" id="vehicle_type">
+                    <option value="car">Car 🚗</option>
+                    <option value="bicycle">Bicycle 🚲</option>
+                    <option value="foot">Walking 🚶</option>
+                </select>
+
+                <input type="submit" value="Navigate">
+                <button type="button" onclick="clearForm()" style="border-radius: 20px;padding: 3px;font-size: 20px;margin-left: 4%;">🗑️</button>
+            </form>
+            {% if duration %}
+            <p><strong>Estimated travel time:</strong> {{ duration }}</p>
+            {% endif %}
+        </div>
+        <div class="map-container">
+            {% if map_html %}
+            {{ map_html | safe }}
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        // Clear the form inputs
+        function clearForm() {
+            document.getElementById('lat1').value = '';
+            document.getElementById('lng1').value = '';
+            document.getElementById('lat2').value = '';
+            document.getElementById('lng2').value = '';
+            document.getElementById('vehicle_type').selectedIndex = 0;
+        }
+    </script>
+</body>
+
+</html>
